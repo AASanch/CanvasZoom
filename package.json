@@ -1,0 +1,21 @@
+{
+  "name": "canvas-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server"
+  },
+  "author": "asanch",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "lite-server": "^2.2.0"
+  },
+  "dependencies": {
+    "systemjs": "^0.19.38"
+  }
+}

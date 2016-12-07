@@ -1,0 +1,13 @@
+#canvasHost {
+    background: lightgray;
+    border:black 2px solid;
+    width: 600px;
+    height: 600px;
+    padding: 20px;
+    margin: 0;
+    overflow: hidden;
+}
+
+#canvasHost:hover {
+    overflow: auto;
+}

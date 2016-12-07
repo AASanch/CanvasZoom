@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Canvas Zoom</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        
+        <!-- 2. Configure SystemJS -->
+        <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+        <script src="node_modules/systemjs/dist/system.src.js"></script>
+        <script>
+            System.config({
+            packages: {        
+                scripts: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+
+        System.import('scripts/App')
+            .then(null, console.error.bind(console));
+        </script>
+        
+    </head>
+    <body>
+        <div id="canvasHost">
+            <canvas id="canvas"/>
+        </div>
+    </body>
+</html>
